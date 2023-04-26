@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; 
+    
+}
+
+body {
+    
+    background-color: #ffffff;
+    
+}
+
+/* Style the navigation menu */
+.topnav {
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #fff;
+	  text-align: center;
+	  padding: 0 2em;
+     
+  }
+
+  .topnav #myLinks {
+  
+    font-weight: 200;
+    font-style: oblique;
+    position: relative;
+    top: 25%; 
+    width: 100%;
+    text-align: center; 
+    margin-top: 20px;
+    border-radius: 24px; 
+    background-color: white;
+    box-sizing: border-box;
+
+  }
+
+  .topnav a {
+    color: rgb(71, 71, 71);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-style: none;
+    transition: font-weight 250ms ease-in-out;
+    border-radius: 24px;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    
+  }
+
+  .navbar1 a{
+
+    cursor: pointer;
+    margin: auto;
+    font-weight: 300;
+    transition: font-weight 250ms ease-in-out;
+
+  }
+
+  .navbar1 a:hover {
+
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 24px;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+  }
+
+/*personal details paragragph*/
+  .center{
+
+    position: fixed;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px;
+    margin: 30px;
+    left: 21%;
+}
+
+.center p{
+
+  width: 70%;
+  display: block;
+  text-align: center;
+  line-height: 1.5;
+  font-size: medium;
+ 
+}
+
+.center h1{
+
+  font-size: 65px;
+  padding-left: 12%;
+  color: #333;
+}
+
+/* social media menu */
+.wrapper{
+  position: fixed;
+  bottom: 2%;
+  left: 35%;
+  border-radius: 60px 60px; 
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  display:inline-flex;
+  
+}
+
+.wrapper .icon span i{
+  font-size:25px;
+  line-height:60px;
+  
+}
+
+.wrapper .icon{
+  margin: 0 20px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  position: relative;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #333;
+  text-decoration: none;
+  border-radius: 24px; 
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index:2;
+}
+
+.wrapper .icon span{
+  position:relative;
+  z-index:2;
+  height: 50px;
+  width: 50px;
+  display:block;
+  background: #fff;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+  border-radius:50%;
+  text-align:center;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+.wrapper .icon .tooltip{
+  position:absolute;
+  top:0px;
+  background: #fff;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+  font-size: 20px;
+  padding: 10px 18px;
+  border-radius: 25px;
+  color:white;
+  opacity:0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip{
+  opacity:1;
+  pointer-events: auto;
+  top:-70px;
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+  background-color: #3333;
+  color: #ffffff;
+}
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background-color: #4b4b4b33;
+  color: #ffffff;
+}
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background-color: #3333;
+  color: #ffffff;
+}
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background-color: #4b4b4b33;
+  color: #ffffff;
+}
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background-color: #3333;
+  color: #ffffff;
+}
